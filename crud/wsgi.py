@@ -19,4 +19,3 @@ application = get_wsgi_application()
 
 app = application # add this line.
 
-
