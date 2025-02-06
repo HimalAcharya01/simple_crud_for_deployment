@@ -76,11 +76,14 @@ WSGI_APPLICATION = 'crud.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'helo',
+        'USER': 'root',
+        'PASSWORD': 'himal987654321@K',
+        'HOST': 'localhost',  # or your database host
+        'PORT': '3306',  # default MySQL port
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
